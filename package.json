@@ -1,0 +1,40 @@
+{
+  "name": "angular-playground",
+  "version": "0.0.0",
+  "description": "Trying out angularjs",
+  "main": "serve.js",
+  "scripts": {
+    "post-install": "make",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bdo-labs/angular-playground.git"
+  },
+  "keywords": [
+    "angular",
+    "browserify",
+    "playground"
+  ],
+  "author": "Henrik Kjelsberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdo-labs/angular-playground/issues"
+  },
+  "homepage": "https://github.com/bdo-labs/angular-playground",
+  "dependencies": {
+    "commander": "^2.2.0",
+    "compression": "^1.0.7",
+    "express": "^4.4.3",
+    "morgan": "^1.1.1"
+  },
+  "devDependencies": {
+    "angular": "^1.2.18",
+    "angular-router-browserify": "0.0.1",
+    "browserify": "^4.1.11",
+    "mocha": "^1.20.1",
+    "myth": "^1.0.4",
+    "node-dev": "^2.3.0",
+    "should": "^4.0.4"
+  }
+}

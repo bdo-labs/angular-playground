@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+var program = require('commander');
+var server = require('..');
+var pkg = require('../package.json');
+
+program
+  .version(pkg.version)
+  .option('-e, --environment [development]', 'environment that hosts the server', 'development')
+  .option('-p, --port [port]', 'port to listen on', Number, 3000)
+  .parse(process.argv);
+
+/**
+ * Serve client.
+ */
+var app = server({
+  'env': program.environment
+}).listen(program.port);
+console.log('%s is listening on port %d', pkg.name, program.port);
+

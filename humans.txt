@@ -1,0 +1,12 @@
+
+/* TEAM */
+Your title: BDO - Digital solutions
+Site: http://bdo.no/
+Location: Trondheim, Norway
+
+/* SITE */
+Last update: 2014/06/23
+Standards: HTML5, CSS3, JavaScript 1.5
+Components: Express, Browserify, Angularjs, Myth
+Software: vim
+
