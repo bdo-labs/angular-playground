@@ -1,9 +1,10 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports = ['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
+	console.count('config');
 	$routeProvider
 		.when('/', {
 			template: '<h1>HEI!</h1>',
-			controller: 'testController'
+			controller: 'TestController'
 		})
 }];
 
@@ -18,12 +19,12 @@ var backstage = angular.module('test', ['ngRoute']);
 
 backstage.config(require('./app/routes.js'));
 
-backstage.controller('testController', ['$scope', function ($scope) {
-
+backstage.controller('TestController', ['$scope', function ($scope) {
 	console.log('I\'m here!')
-}])
+}]);
 
 // backstage.directive('moduleRenderer', renderer);
+
 },{"./app/routes.js":1,"angular":4,"angular-router-browserify":3}],3:[function(require,module,exports){
 /**
 * @license AngularJS v1.2.15

@@ -8,9 +8,8 @@ var backstage = angular.module('test', ['ngRoute']);
 
 backstage.config(require('./app/routes.js'));
 
-backstage.controller('testController', ['$scope', function ($scope) {
-
+backstage.controller('TestController', ['$scope', function ($scope) {
 	console.log('I\'m here!')
-}])
+}]);
 
 // backstage.directive('moduleRenderer', renderer);

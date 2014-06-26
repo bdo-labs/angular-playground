@@ -34,13 +34,12 @@ function server(opts){
   if ('test' != opts.env) app.use(logger());
   app.use(compression());
   app.use(express.static('./dist'));
-  app.use('/humans.txt', function(req, res){ res.sendfile('./humans.txt'); });
 
   // Leave routing etc. to the client.
   // Meaning that routes that don't get a static hit, will be
   // dynamically routed to the `index.html` file.
   app.use(function(req, res){
-    res.sendfile('./dist/index.html');
+    res.sendfile('./index.html');
   });
 
   return app;
